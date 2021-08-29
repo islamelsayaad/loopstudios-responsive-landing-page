@@ -502,9 +502,15 @@ footer .footer_section_wrapper {
 }
 
 @media screen and (max-width: 768px) {
+  header {
+    height: 100vh;
+  }
+
   header .header_content {
     display: flex;
+    justify-content: center;
     align-items: center;
+    height: 50%;
   }
 
   header .header_content h1 {
@@ -538,6 +544,10 @@ footer .footer_section_wrapper {
   header .header_content h1 {
     line-height: 60px;
   }
+
+  .main_Section_wrapper .vr_section img {
+    height: 300px;
+  }
 }
 
 @media screen and (max-width: 492px) {
@@ -545,11 +555,55 @@ footer .footer_section_wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 80%;
   }
 
   header .header_content h1 {
     font-size: 3.5rem;
     padding: 1rem;
     line-height: 55px;
+  }
+
+  .main_Section_wrapper .vr_section {
+    position: static;
+    padding: 3.5rem 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header .header_content {
+    margin-top: auto;
+  }
+
+  header .header_content h1 {
+    font-size: 2.5rem;
+    padding: 1.5rem;
+    line-height: 40px;
+  }
+
+  .vr_section .vr_textbox_wrapper {
+    width: 100%;
+  }
+
+  .vr_section .vr_textbox_wrapper h1,
+  .creation_section .creation_top_wrapper h1 {
+    font-size: 32px;
+  }
+
+  .creation_blocks_wrapper .creation_block h3 {
+    font-size: 28px;
+  }
+
+  .vr_section .vr_textbox_wrapper p {
+    font-size: 14px;
+  }
+
+  .creation_section .creation_btn.mob_active {
+    font-size: 14px;
+    width: 150px;
+  }
+
+  .footer_section_wrapper .last_copyright {
+    font-size: 14px;
   }
 }
