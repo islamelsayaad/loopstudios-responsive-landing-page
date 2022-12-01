@@ -75,7 +75,7 @@ a {
 
 header {
   padding: 0 10rem;
-  height: 90vh;
+  height: 100vh;
   background-image: url(images/desktop/image-hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -249,7 +249,7 @@ header .header_content h1 {
 .creation_section .creation_blocks_wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(calc(1200px / 5), 1fr));
-  grid-template-rows: repeat(2, 500px);
+  grid-template-rows: repeat(2, 400px);
   align-items: center;
   justify-items: center;
   gap: 1.75rem;
@@ -335,7 +335,7 @@ header .header_content h1 {
 }
 
 footer {
-  height: 25vh;
+  height: 250px;
   background-color: #000000;
   padding: 2rem;
   display: flex;
@@ -345,11 +345,11 @@ footer {
 }
 
 footer .footer_section_wrapper {
-  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   height: 100%;
 }
 
@@ -361,7 +361,7 @@ footer .footer_section_wrapper {
 }
 
 .footer_section_wrapper .rt-col {
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 .footer_section_wrapper .lt-col {
